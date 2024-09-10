@@ -7,8 +7,9 @@
     <title id="page-title-diff">Differentiation</title>
     <link rel="stylesheet" href="Static/Css/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.5.0/math.min.js"></script>
+    <script src="/Static/Js/langIndex.js"></script>
     <script src="/Static/Js/langDiff.js"></script>
-
+    
 </head>
 
 <header class="header">
@@ -27,20 +28,20 @@
         <p id="shortDesc-diff" class="shortDesc">Use standart notation such as "^" for exponent,
             sqrt() for square root all arguments of
             functions must be in Parentheses like sin(x) and etc...</p>
-        <section class="inputs">
-            <input id="functioninput" name="functionInput" type="text" placeholder="Function" required>
-            <input id="functionvar" type="text" name="functionVar" placeholder="With respect to ?">
-        </section>
-        <section class="diffbtn">
-            <button id="diff-btn" onclick="differentiate()">Differentiate</button>
-        </section>
-        <p id="shortDesc-diff_2" class="shortDesc">The derivative of the function is:</p>
-        <section class="outputs">
-            <div type="Derivative" id="functionoutput"></div>
-        </section>
-    </main>
-</body>
-<script src="Static/Js/Differentiation.js"></script>
-<script>language()</script>
-
-</html>
+            <section class="inputs">
+                <input id="functioninput" name="functionInput" type="text" placeholder="Function" required>
+                <input id="functionvar" type="text" name="functionVar" placeholder="With respect to ?">
+            </section>
+            <section class="diffbtn">
+                <button id="diff-btn" onclick="differentiate()">Differentiate</button>
+            </section>
+            <p id="shortDesc-diff_2" class="shortDesc">The derivative of the function is:</p>
+            <section class="outputs">
+                <div type="Derivative" id="functionoutput"></div>
+            </section>
+        </main>
+    </body>
+    <script src="Static/Js/Differentiation.js"></script>
+    
+    <script>languages()</script>
+    </html>

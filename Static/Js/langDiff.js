@@ -1,5 +1,6 @@
-function language(){
-    let lang = 'bg';
+function languages(){
+    let lang = localStorage.getItem(language);
+    console.log(lang);
    if(lang === 'en'){
      document.getElementById('page-title-diff').innerHTML = "Differentiation"
    }
@@ -13,7 +14,7 @@ function language(){
      document.getElementsByName('functionInput')[0].placeholder = "Функция"
      document.getElementsByName('functionVar')[0].placeholder = "Спрямо?"
      document.getElementById('diff-btn').innerHTML = "Диференцирай"
-     document.getElementById('shortDesc-diff_2').innerHTML = "Производната на функцията е:"
+     document.getElementById('shortDesc-diff_2').innerHTML = "Производната на функцията е :"
 
 
 
