@@ -4,41 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Differentiation</title>
+    <title id="page-title-diff">Differentiation</title>
     <link rel="stylesheet" href="Static/Css/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.5.0/math.min.js"></script>
+    <script src="/Static/Js/langDiff.js"></script>
 
 </head>
 
 <header class="header">
-    <h1>Differentiation</h1>
+    <h1 id="title-diff">Differentiation</h1>
 </header>
 <body>
     <nav class="navigation">
-        <a href="index">Home</a>
-        <a href="Quadraticsolver">Quadratic solver</a>
-        <a href="#">test</a>
-        <a href="#">test</a>
-        <a href="#">test</a>
+        <a id="diff-anc-1" href="index">Home</a>
+        <a id="diff-anc-2" href="Quadraticsolver">Quadratic solver</a>
+        <a id="diff-anc-3" href="#">test</a>
+        <a id="diff-anc-4" href="#">test</a>
+        <a id="diff-anc-5" href="#">test</a>
     </nav>
     <main>
-        <label for="functioninput" class="infoLabel">Insert Function</label>
-        <p class="shortDesc">Use standart notation such as "^" for exponent,
+        <label id="insf-diff" for="functioninput" class="infoLabel">Insert Function</label>
+        <p id="shortDesc-diff" class="shortDesc">Use standart notation such as "^" for exponent,
             sqrt() for square root all arguments of
             functions must be in Parentheses like sin(x) and etc...</p>
         <section class="inputs">
-            <input id="functioninput" type="text" placeholder="Function" required>
-            <input id="functionvar" type="text" placeholder="With respect to ?">
+            <input id="functioninput" name="functionInput" type="text" placeholder="Function" required>
+            <input id="functionvar" type="text" name="functionVar" placeholder="With respect to ?">
         </section>
         <section class="diffbtn">
-            <button onclick="differentiate()">Differentiate</button>
+            <button id="diff-btn" onclick="differentiate()">Differentiate</button>
         </section>
-        <p class="shortDesc">The derivative of the function is:</p>
+        <p id="shortDesc-diff_2" class="shortDesc">The derivative of the function is:</p>
         <section class="outputs">
             <div type="Derivative" id="functionoutput"></div>
         </section>
     </main>
 </body>
 <script src="Static/Js/Differentiation.js"></script>
+<script>language()</script>
 
 </html>

@@ -4,24 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math Analysis</title>
+    <title id="page-title-index">Math Analysis</title>
     <link rel="stylesheet" href="Static/Css/styles.css">
 </head>
 
 <header class="header">
-    <h1>Math Analysis</h1>
+    <h1 id="index-title" >Math Analysis</h1>
 </header>
 <body>
     <nav class="navigation">
-        <a href="differentiation">Differentiation</a>
-        <a href="Quadraticsolver">Quadratic solver</a>
-        <a href="#">test</a>
-        <a href="#">test</a>
-        <a href="#">test</a>
+        <a id="index-anc-1" href="differentiation">Differentiation</a>
+        <a id="index-anc-2" href="Quadraticsolver">Quadratic solver</a>
+        <a id="index-anc-3" href="#">test</a>
+        <a id="index-anc-4" href="#">test</a>
+        <a id="index-anc-5" href="#">test</a>
+        <label style="cursor: pointer;" for="lang-select">Select language</label>
+        <select id="lang-select">
+            <option>en</option>
+            <option>bg</option>
+        </select>
+        <button class="lang-btn" onclick="language();">Select</button>
     </nav>
     <main>
 
     </main>
 </body>
-
+<script src="/Static/Js/langIndex.js"></script>
 </html>
