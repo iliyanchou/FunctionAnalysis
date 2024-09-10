@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="Static/Css/styles.css">
-  <title>Quadratic solver</title>
+  <title id="page-title-quad">Quadratic solver</title>
+  <script src="/Static/Js/langIndex.js"></script>
+
 </head>
 <header class="header">
-    <h1>Quadrtaic Solver</h1>
+  <h1 id="title-quad">Quadrtaic Solver</h1>
 </header>
+
 <body>
   <nav class="navigation">
-    <a href="differentiation">Differentiation</a>
-    <a href="index">Home</a>
-    <a href="#">test</a>
-    <a href="#">test</a>
-    <a href="#">test</a>
-</nav>
-<main>
-  <p class="short-desc">The Quadratic must be in standart form ax<sup>2</sup>‎ + bx + c = 0 where a ≠ 0</p>
-  <section class="quad-fields">
-    <section class="quad-inputs">
-      <input id="a" type="number" placeholder="Coefficient a" >
-      <input id="b" type="number" placeholder="Coefficient b" >
-      <input id="c" type="number" placeholder="Coefficient c" >
+    <a id="quad-a-1" href="differentiation">Differentiation</a>
+    <a id="quad-a-2" href="index">Home</a>
+    <a id="quad-a-3" href="#">test</a>
+    <a id="quad-a-4" href="#">test</a>
+    <a id="quad-a-5" href="#">test</a>
+  </nav>
+  <main>
+    <p id="short-desc-quad" class="short-desc">The Quadratic must be in standart form ax<sup>2</sup>‎ + bx + c = 0 where
+      a ≠ 0</p>
+    <section class="quad-fields">
+      <section class="quad-inputs">
+        <input name="a" id="a" type="number" placeholder="Coefficient a">
+        <input name="b" id="b" type="number" placeholder="Coefficient b">
+        <input name="c" id="c" type="number" placeholder="Coefficient c">
+      </section>
+      <section class="solve-btn-sec">
+        <button id="solve-btn-quad" class="solve-btn" onclick="solve();">Solve</button>
+      </section>
     </section>
-  <section class="solve-btn-sec">
-    <button class="solve-btn" onclick="solve();">Solve</button>
-  </section>
-  </section>
-  <section class="outputs">
-    <div id="state"></div>
-  </section>
-</main>
-<script src="Static/Js/Quadratic.js"></script>
+    <section class="outputs">
+      <div id="state"></div>
+    </section>
+  </main>
+  <script src="Static/Js/Quadratic.js"></script>
+  <script>languages()</script>
 </body>
+
 </html>

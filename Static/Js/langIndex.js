@@ -1,8 +1,8 @@
-
 let languageSelect = localStorage.getItem(language)
 if (languageSelect === null) {
   languageSelect = 'en';
 }
+document.getElementById('lang-select').value = languageSelect;
 if (languageSelect === 'en') {
   document.getElementById('page-title-index').innerHTML = "Math Analysis"
   document.getElementById('index-title').innerHTML = "Math Analysis"
@@ -31,4 +31,5 @@ if (languageSelect === 'bg') {
   }
   localStorage.setItem(language, lang);
 }
+
 
