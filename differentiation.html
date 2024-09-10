@@ -4,17 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="page-title-diff">Differentiation</title>
+    <title id="page-title-diff"></title>
     <link rel="stylesheet" href="Static/Css/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.5.0/math.min.js"></script>
     <script src="Static/Js/langIndex.js"></script>
     <script src="Static/Js/langDiff.js"></script>
-    
+
 </head>
 
 <header class="header">
-    <h1 id="title-diff">Differentiation</h1>
+    <h1 id="title-diff"></h1>
 </header>
+
 <body>
     <nav class="navigation">
         <a id="diff-anc-1" href="index"></a>
@@ -26,20 +27,21 @@
     <main>
         <label id="insf-diff" for="functioninput" class="infoLabel"> </label>
         <p id="shortDesc-diff" class="shortDesc"></p>
-            <section class="inputs">
-                <input id="functioninput" name="functionInput" type="text" placeholder="Function" required>
-                <input id="functionvar" type="text" name="functionVar" placeholder="With respect to ?">
-            </section>
-            <section class="diffbtn">
-                <button id="diff-btn" onclick="differentiate()"></button>
-            </section>
-            <p id="shortDesc-diff_2" class="shortDesc"></p>
-            <section class="outputs">
-                <div type="Derivative" id="functionoutput"></div>
-            </section>
-        </main>
-    </body>
-    <script src="Static/Js/Differentiation.js"></script>
-    
-    <script>languages()</script>
-    </html>
+        <section class="inputs">
+            <input id="functioninput" name="functionInput" type="text" required>
+            <input id="functionvar" type="text" name="functionVar">
+        </section>
+        <section class="diffbtn">
+            <button id="diff-btn" onclick="differentiate()"></button>
+        </section>
+        <p id="shortDesc-diff_2" class="shortDesc"></p>
+        <section class="outputs">
+            <div type="Derivative" id="functionoutput"></div>
+        </section>
+    </main>
+</body>
+<script src="Static/Js/Differentiation.js"></script>
+
+<script>languages()</script>
+
+</html>

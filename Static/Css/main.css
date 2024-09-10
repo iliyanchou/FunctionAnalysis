@@ -9,3 +9,32 @@ h1 {
 * {
     font-family: 'Courier New', Courier, monospace;
 }
+
+.labelsel {
+    color: purple;
+    font-weight: bold;
+}
+
+#lang-select {
+    background-color: purple;
+    color: wheat;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.lang-btn {
+    background-color: purple;
+    color: wheat;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, opacity 0.2s;
+}
+.lang-btn:hover{
+    background-color: wheat;
+    color: purple;
+}
+.lang-btn:active{
+    opacity: 0.5;
+}

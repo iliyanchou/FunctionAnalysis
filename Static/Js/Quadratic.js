@@ -2,14 +2,14 @@ let lang = localStorage.getItem(language);
 function languages() {
   console.log(lang);
   if (lang === 'en') {
-    document.getElementById('ppage-title-quad').innerHTML = "Quadratic solver"
+    document.getElementById('page-title-quad').innerHTML = "Quadratic solver"
     document.getElementById('title-quad').innerHTML = "Quadrtaic Solver"
     document.getElementById('quad-a-1').innerHTML = "Differentiation"
     document.getElementById('quad-a-2').innerHTML = "Home"
     document.getElementById('short-desc-quad').innerHTML = "The Quadratic must be in standart form ax<sup>2</sup>‎ + bx + c = 0 where a ≠ 0"
-    document.getElementByName('a')[0].placeholder = "Coefficient a"
-    document.getElementByName('b')[0].placeholder = "Coefficient b"
-    document.getElementByName('c')[0].placeholder = "Coefficient c"
+    document.getElementsByName('a')[0].placeholder = "Coefficient a"
+    document.getElementsByName('b')[0].placeholder = "Coefficient b"
+    document.getElementsByName('c')[0].placeholder = "Coefficient c"
     document.getElementById('solve-btn-quad').innerHTML = "Solve"
 
 
