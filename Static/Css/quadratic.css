@@ -1,0 +1,55 @@
+.short-desc{
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: wheat;
+  font-weight: bold;
+  font-size: large;
+}
+.quad-inputs{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+.quad-inputs input{
+  height: 30px;
+  width: 15%;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+ outline: none;
+  color: purple;
+  background-color: wheat;
+  font-weight: bold;
+}
+.solve-btn-sec{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+.solve-btn{
+  width: 30%;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: purple;
+  background-color: wheat;
+  transition: color 0.2s, background-color 0.2s, opacity 0.2s;
+}
+.solve-btn:hover{
+  background-color: purple;
+  color: wheat;
+}
+.solve-btn:active{
+  opacity: 50%;
+}
+.outputs{
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+}

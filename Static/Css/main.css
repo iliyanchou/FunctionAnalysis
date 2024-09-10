@@ -1,0 +1,11 @@
+body {
+    background-color: rgb(78, 78, 78);
+}
+
+h1 {
+    color: wheat;
+}
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}

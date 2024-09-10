@@ -1,0 +1,19 @@
+.navigation a{
+    text-decoration: none;
+    color: purple;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: wheat;
+    height: 50px;
+    align-items: center;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: purple;
+    margin-bottom: 50px;
+    box-shadow: 3px 3px 0px wheat;
+
+}
