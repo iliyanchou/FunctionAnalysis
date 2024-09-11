@@ -18,7 +18,7 @@ function languages() {
     document.getElementById('diff-anc-1').innerHTML = "Главна страница"
     document.getElementById('diff-anc-2').innerHTML = "Калкулатор за квадратни уравнения"
     document.getElementById('insf-diff').innerHTML = "Въведете функция"
-    document.getElementById('shortDesc-diff').innerHTML = "Използвайте стандартно означение като например '^', 'sqrt' за корен квадратен , всички аргументи на функции трябва да бъдат в скоби!"
+    document.getElementById('shortDesc-diff').innerHTML = "Използвайте стандартно означение като например '^' за степенуване, 'sqrt' за корен квадратен и тн... , всички аргументи на функции трябва да бъдат в скоби! напр... sin(x)"
     document.getElementsByName('functionInput')[0].placeholder = "Функция"
     document.getElementsByName('functionVar')[0].placeholder = "Спрямо?"
     document.getElementById('diff-btn').innerHTML = "Диференцирай"
