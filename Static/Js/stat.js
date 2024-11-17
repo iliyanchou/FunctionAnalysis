@@ -70,4 +70,30 @@ function quartils(input) {
   });
   Q2 /= Q2Arr.length;
   let stateQ1 = String(isEven(Q1Arr.length));
-  let 
+  let checkNumQ1 = checknum(stateQ1, Q1Arr.length);
+  if(stateQ1 === "Even"){
+    Q1 += Q1Arr[checkNumQ1];
+    Q1 += Q1Arr[checkNumQ1+1];
+    Q1 /= 2;
+  }
+  else if (stateQ1 === "Odd"){
+    Q1 += Q1Arr[checkNumQ1];
+  }
+  let stateQ3 = String(isEven(Q3Arr.length));
+  let checkNumQ3 = checknum(stateQ3, Q3Arr.length);
+  if(stateQ3 === "Even"){
+    Q3 += Q3Arr[checkNumQ3];
+    Q3 += Q3Arr[checkNumQ3+1];
+    Q3 /= 2;
+  }
+  else if (stateQ3 === "Odd"){
+    Q3 += Q3Arr[checkNumQ3];
+  }
+  let quartilsArr = [];
+  quartilsArr.push(Q1);
+  quartilsArr.push(Q2);
+  quartilsArr.push(Q3);
+  return quartilsArr;
+}
+
+

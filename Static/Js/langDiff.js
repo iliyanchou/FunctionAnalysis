@@ -23,4 +23,8 @@ function languages() {
     document.getElementById('shortDesc-diff').innerHTML = "Използвайте стандартно означение като например '^' за степенуване, 'sqrt' за корен квадратен и тн... , всички аргументи на функции трябва да бъдат в скоби! напр... sin(x)"
     document.getElementsByName('functionInput')[0].placeholder = "Функция"
     document.getElementsByName('functionVar')[0].placeholder = "Спрямо?"
-    document.getElementById('diff-btn').innerHTML = "Ди
+    document.getElementById('diff-btn').innerHTML = "Диференцирай"
+    document.getElementById('shortDesc-diff_2').innerHTML = "Производната на функцията е :"
+
+  }
+}
