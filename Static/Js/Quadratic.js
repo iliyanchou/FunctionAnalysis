@@ -1,6 +1,5 @@
 let lang = localStorage.getItem(language);
 function languages() {
-  console.log(lang);
   if (lang === 'en') {
     document.getElementById('page-title-quad').innerHTML = "Quadratic solver"
     document.getElementById('title-quad').innerHTML = "Quadrtaic Solver"

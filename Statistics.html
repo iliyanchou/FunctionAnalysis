@@ -5,35 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="Static/Css/styles.css">
   <link rel="icon" type="image/x-icon" href="Static/Assets/Icon.png">
-  <title id="page-title-stat">Statistics</title>
+  <title id="page-title-stat"></title>
+  <script src="Static/Js/langIndex.js"></script>
 </head>
 <header class="header">
-  <h1 id="title-stat">Statistics</h1>
+  <h1 id="title-stat"></h1>
 </header>
 <body>
   <nav class="navigation">
-    <a id="stat-a-1" href="differentiation">Differentiation</a>
-    <a id="stat-a-2" href="index">Home</a>
-    <a id="stat-a-3" href="Quadraticsolver">Quadraticsolver</a>
+    <a id="stat-a-1" href="differentiation"></a>
+    <a id="stat-a-2" href="index"></a>
+    <a id="stat-a-3" href="Quadraticsolver"></a>
     <a id="stat-a-4" href="#">test</a>
     <a id="stat-a-5" href="#">test</a>
   </nav>
   <main>
-    <p style="display: flex; justify-content: center;" class="input-label">Insert data (for accruate 5-type data use at least 3 data inputs)(Min,Q1,Q2,Q3,Max):</p>
+    <p id="inputLabelStat" style="display: flex; justify-content: center;" class="input-label"></p>
     <section class="Input-section">
-      <label class="input-label" for="inVal">Input:</label>
-      <input id="inVal" class="inVal" type="number" placeholder="Data values....">
-      <button class="pushBtn" onclick="push()">Push</button>
+      <label id="input-label" class="input-label" for="inVal"></label>
+      <input name="inValStat" id="inVal" class="inVal" type="number" placeholder="">
+      <button id="statPushBtn" class="pushBtn" onclick="push()"></button>
     </section>
     <section class="Output-section">
-      <p class="lablesOut">Values: </p>
+      <p id="outputValLabel" class="lablesOut"></p>
       <p id="outputArray" class="outputs"></p>
-      <p class="lablesOut" >The mean of the data is:</p>
+      <p id="labelsOutStat" class="lablesOut" ></p>
       <p id="mean" class="outputs" ></p>
-      <p class="lablesOut" >5-type data is: </p>
+      <p id="5typeOutLabel" class="lablesOut" ></p>
       <p id="data5" class="outputs" ></p>
     </section>
   </main>
+  <script src="Static/Js/langStat.js"></script>
   <script src="Static/Js/stat.js"></script>
 </body>
 </html>
