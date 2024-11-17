@@ -12,17 +12,28 @@
 </header>
 <body>
   <nav class="navigation">
-    <a id="stat-a-1" href="differentiation">diff</a>
-    <a id="stat-a-2" href="index">Quad-solv</a>
-    <a id="stat-a-3" href="#">Home</a>
+    <a id="stat-a-1" href="differentiation">Differentiation</a>
+    <a id="stat-a-2" href="index">Home</a>
+    <a id="stat-a-3" href="Quadraticsolver">Quadraticsolver</a>
     <a id="stat-a-4" href="#">test</a>
     <a id="stat-a-5" href="#">test</a>
   </nav>
   <main>
-    <label for="stat-inp">Input</label>
-    <input id="stat-inp" class="stat-in" type="text">
-    <button class="stat-btn">Solve</button>
+    <p style="display: flex; justify-content: center;" class="input-label">Insert data (for accruate 5-type data use at least 3 data inputs)(Min,Q1,Q2,Q3,Max):</p>
+    <section class="Input-section">
+      <label class="input-label" for="inVal">Input:</label>
+      <input id="inVal" class="inVal" type="number" placeholder="Data values....">
+      <button class="pushBtn" onclick="push()">Push</button>
+    </section>
+    <section class="Output-section">
+      <p class="lablesOut">Values: </p>
+      <p id="outputArray" class="outputs"></p>
+      <p class="lablesOut" >The mean of the data is:</p>
+      <p id="mean" class="outputs" ></p>
+      <p class="lablesOut" >5-type data is: </p>
+      <p id="data5" class="outputs" ></p>
+    </section>
   </main>
-  <script src="/Static/Js/stat.js"></script>
+  <script src="Static/Js/stat.js"></script>
 </body>
 </html>

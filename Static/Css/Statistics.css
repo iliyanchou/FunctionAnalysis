@@ -1,19 +1,16 @@
-.short-desc{
-  display: flex; 
+.Input-section{
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 15px;
+}
+.input-label{
   color: wheat;
   font-weight: bold;
   font-size: large;
 }
-.quad-inputs{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 10px;
-}
-.quad-inputs input{
+.inVal{
   height: 30px;
   width: 15%;
   text-align: center;
@@ -24,14 +21,8 @@
   background-color: wheat;
   font-weight: bold;
 }
-.solve-btn-sec{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 20px;
-}
-.solve-btn{
-  width: 30%;
+.pushBtn{
+  width: 10%;
   height: 30px;
   border: none;
   border-radius: 10px;
@@ -41,15 +32,32 @@
   background-color: wheat;
   transition: color 0.2s, background-color 0.2s, opacity 0.2s;
 }
-.solve-btn:hover{
+.pushBtn:hover{
   background-color: purple;
   color: wheat;
 }
-.solve-btn:active{
+.pushBtn:active{
   opacity: 50%;
 }
-.outputsdiff{
+.Output-section{
   display: flex;
   flex-direction: row;
-  margin-top: 25px;
+  gap: 10px;
+  justify-content: center;
+  align-items:baseline;
+}
+.outputs{
+  color: purple;
+  font-weight: bold;
+  font-size: large;
+  background-color: rgba(245, 222, 179,80%);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+  padding: 3px;
+}
+.lablesOut{
+  color: wheat;
+  font-weight: bold;
+  font-size: large;
 }

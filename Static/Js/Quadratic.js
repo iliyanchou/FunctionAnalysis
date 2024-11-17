@@ -6,6 +6,7 @@ function languages() {
     document.getElementById('title-quad').innerHTML = "Quadrtaic Solver"
     document.getElementById('quad-a-1').innerHTML = "Differentiation"
     document.getElementById('quad-a-2').innerHTML = "Home"
+    document.getElementById('quad-a-3').innerHTML = "Statistics"
     document.getElementById('short-desc-quad').innerHTML = "The Quadratic must be in standart form ax<sup>2</sup>‎ + bx + c = 0 where a ≠ 0"
     document.getElementsByName('a')[0].placeholder = "Coefficient a"
     document.getElementsByName('b')[0].placeholder = "Coefficient b"
@@ -19,6 +20,7 @@ function languages() {
     document.getElementById('title-quad').innerHTML = "Калкулатор за квадратни уравнения"
     document.getElementById('quad-a-1').innerHTML = "Производна на функция"
     document.getElementById('quad-a-2').innerHTML = "Главна страница"
+    document.getElementById('quad-a-3').innerHTML = "Статистика"
     document.getElementById('short-desc-quad').innerHTML = "Квадратния тричлен трябва да е в прост вид ax<sup>2</sup>‎ + bx + c = 0 където a ≠ 0";
     document.getElementsByName('a')[0].placeholder = "Коефициент a";
     document.getElementsByName('b')[0].placeholder = "Коефициент b";
