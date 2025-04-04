@@ -1,3 +1,8 @@
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .Input-section{
   display: flex;
   flex-direction: row;
@@ -38,6 +43,10 @@
 }
 .pushBtn:active{
   opacity: 50%;
+}
+.displayData{
+  display: flex;
+  justify-content: center;
 }
 .Output-section{
   display: flex;

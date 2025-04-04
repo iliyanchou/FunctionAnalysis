@@ -6,8 +6,6 @@ document.getElementById('lang-select').value = languageSelect;
 if (languageSelect === 'en') {
   document.getElementById('page-title-index').innerHTML = "Math Analysis"
   document.getElementById('index-title').innerHTML = "Math Analysis"
-  document.getElementById('lang-Sel').innerHTML = "Select language ->"
-  document.getElementById('lang-Sel-btn').innerHTML = "Select"
   document.getElementById('index-anc-1').innerHTML = "Differentiation"
   document.getElementById('index-anc-2').innerHTML = "Quadratic solver"
   document.getElementById('index-anc-3').innerHTML = "Statistics"
@@ -15,8 +13,6 @@ if (languageSelect === 'en') {
 if (languageSelect === 'bg') {
   document.getElementById('page-title-index').innerHTML = "Математически Анализ"
   document.getElementById('index-title').innerHTML = "Математически Анализ"
-  document.getElementById('lang-Sel').innerHTML = "Избери език ->"
-  document.getElementById('lang-Sel-btn').innerHTML = "Избери"
   document.getElementById('index-anc-1').innerHTML = "Производна на функция"
   document.getElementById('index-anc-2').innerHTML = "Калкулатор за квадратни уравнения"
   document.getElementById('index-anc-3').innerHTML = "Статистика"

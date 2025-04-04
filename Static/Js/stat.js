@@ -1,9 +1,51 @@
 let values = [];
-function push() {
+function calculate() {
   let inValue = Number(document.getElementById('inVal').value)
   values.push(inValue);
   values.sort(function (a, b) { return a - b });
   document.getElementById('outputArray').innerHTML = values;
+
+  let isPositive = true;
+
+  for(i = 0; i<values.length; i++){
+    if(values[i] < 0){
+      isPositive = false;
+      break;
+    }
+  }
+  let harmonicMean = 0;
+  values.forEach(element => {
+   harmonicMean += 1/element;
+  });
+  harmonicMean = values.length/harmonicMean;
+  harmonicMean = harmonicMean.toFixed(2);
+  document.getElementById('harmonicMean').innerHTML = harmonicMean;
+
+  if(isPositive){
+
+    let geometricMean = 1;
+    values.forEach(element => {
+      geometricMean *= element;
+    });
+    geometricMean = Math.sqrt(geometricMean);
+    geometricMean = geometricMean.toFixed(2);
+
+    let quadraticMean = 0;
+    values.forEach(element => {
+      quadraticMean += Math.pow(element,2);
+    });
+    quadraticMean = quadraticMean/values.length;
+    quadraticMean = Math.sqrt(quadraticMean);
+    quadraticMean = quadraticMean.toFixed(2);
+
+    document.getElementById('geometricMean').innerHTML = geometricMean;
+    document.getElementById('quadraticMean').innerHTML = quadraticMean;
+  }
+  else{
+    document.getElementById('geometricMean').innerHTML = "-";
+    document.getElementById('quadraticMean').innerHTML = "-";
+  }
+
   let mean = 0;
   values.forEach(element => {
     mean += element;
@@ -11,13 +53,20 @@ function push() {
   mean /= values.length;
   mean = mean.toFixed(2);
   document.getElementById('mean').innerHTML = mean;
+
   let minVal = values[0];
-let maxVal = values[values.length-1];
-let data5 = [];
-data5.push(minVal);
-data5.push(quartils(values));
-data5.push(maxVal);
-document.getElementById('data5').innerHTML = data5;
+  let maxVal = values[values.length-1];
+
+  let swing = maxVal-minVal;
+  document.getElementById('swing').innerHTML = swing;
+
+
+  let data5 = [];
+  data5.push(minVal);
+  data5.push(quartils(values));
+  data5.push(maxVal);
+  document.getElementById('data5').innerHTML = data5;
+
 }
 function quartils(input) {
   let inLeng = input.length;
@@ -95,5 +144,9 @@ function quartils(input) {
   quartilsArr.push(Q3);
   return quartilsArr;
 }
+
+// function calculateMode(data){
+//   let frequencies = new Array(data.length).fill(0); // working on it
+// }
 
 

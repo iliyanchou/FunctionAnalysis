@@ -16,24 +16,34 @@
     <a id="stat-a-1" href="differentiation"></a>
     <a id="stat-a-2" href="index"></a>
     <a id="stat-a-3" href="Quadraticsolver"></a>
-    <a id="stat-a-4" href="#">test</a>
-    <a id="stat-a-5" href="#">test</a>
   </nav>
   <main>
     <p id="inputLabelStat" style="display: flex; justify-content: center;" class="input-label"></p>
     <section class="Input-section">
       <label id="input-label" class="input-label" for="inVal"></label>
       <input name="inValStat" id="inVal" class="inVal" type="number" placeholder="">
-      <button id="statPushBtn" class="pushBtn" onclick="push()"></button>
+      <button id="statPushBtn" class="pushBtn" onclick="calculate()"></button>
     </section>
-    <section class="Output-section">
-      <p id="outputValLabel" class="lablesOut"></p>
-      <p id="outputArray" class="outputs"></p>
-      <p id="labelsOutStat" class="lablesOut" ></p>
-      <p id="mean" class="outputs" ></p>
-      <p id="5typeOutLabel" class="lablesOut" ></p>
-      <p id="data5" class="outputs" ></p>
-    </section>
+      <section class="displayData">
+        <p id="outputValLabel" class="lablesOut"></p>
+        <p id="outputArray" class="outputs"></p>
+      </section>
+      <section class="Output-section">
+        <p id="harmonicLabel" class="lablesOut"></p>
+        <p id="harmonicMean" class="outputs" ></p>
+        <p id="geometricLabel" class="lablesOut"></p>
+        <p id="geometricMean" class="outputs" ></p>
+        <p id="labelsOutStat" class="lablesOut"></p>
+        <p id="mean" class="outputs" ></p>
+        <p id="quadraticLabel" class="lablesOut"></p>
+        <p id="quadraticMean" class="outputs" ></p>
+        <p id="swingLabel" class="lablesOut"></p>
+        <p id="swing" class="outputs"></p>
+      </section>
+      <section class="displayData">
+        <p id="5typeOutLabel" class="lablesOut" ></p>
+        <p id="data5" class="outputs" ></p>
+      </section>
   </main>
   <script src="Static/Js/langStat.js"></script>
   <script src="Static/Js/stat.js"></script>
