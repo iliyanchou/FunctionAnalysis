@@ -2,22 +2,26 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.Input-section{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  gap: 15px;
 }
+.tableInf{
+  text-align: center;
+  table-layout: auto;
+}
+td {
+  white-space: nowrap; /* prevents wrapping */
+  padding: 4px 8px; /* adjust padding for spacing */
+}
+
 .input-label{
   color: wheat;
   font-weight: bold;
   font-size: large;
+  width: 100%;
 }
 .inVal{
   height: 30px;
-  width: 15%;
+  width: 100%;
   text-align: center;
   border-radius: 10px;
   border: none;
@@ -27,7 +31,7 @@ main{
   font-weight: bold;
 }
 .pushBtn{
-  width: 10%;
+  width: 100%;
   height: 30px;
   border: none;
   border-radius: 10px;
@@ -47,13 +51,6 @@ main{
 .displayData{
   display: flex;
   justify-content: center;
-}
-.Output-section{
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  justify-content: center;
-  align-items:baseline;
 }
 .outputs{
   color: purple;

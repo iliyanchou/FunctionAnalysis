@@ -18,32 +18,70 @@
     <a id="stat-a-3" href="Quadraticsolver"></a>
   </nav>
   <main>
-    <p id="inputLabelStat" style="display: flex; justify-content: center;" class="input-label"></p>
-    <section class="Input-section">
-      <label id="input-label" class="input-label" for="inVal"></label>
-      <input name="inValStat" id="inVal" class="inVal" type="number" placeholder="">
-      <button id="statPushBtn" class="pushBtn" onclick="calculate()"></button>
-    </section>
-      <section class="displayData">
-        <p id="outputValLabel" class="lablesOut"></p>
-        <p id="outputArray" class="outputs"></p>
-      </section>
-      <section class="Output-section">
-        <p id="harmonicLabel" class="lablesOut"></p>
-        <p id="harmonicMean" class="outputs" ></p>
-        <p id="geometricLabel" class="lablesOut"></p>
-        <p id="geometricMean" class="outputs" ></p>
-        <p id="labelsOutStat" class="lablesOut"></p>
-        <p id="mean" class="outputs" ></p>
-        <p id="quadraticLabel" class="lablesOut"></p>
-        <p id="quadraticMean" class="outputs" ></p>
-        <p id="swingLabel" class="lablesOut"></p>
-        <p id="swing" class="outputs"></p>
-      </section>
-      <section class="displayData">
-        <p id="5typeOutLabel" class="lablesOut" ></p>
-        <p id="data5" class="outputs" ></p>
-      </section>
+      <p id="inputLabelStat" style="display: flex; justify-content: center;" class="input-label"></p>
+      <div style="overflow-x:auto;">
+      <table class="tableInf">
+        <tr>
+          <td>
+          <label id="input-label" class="input-label" for="inVal"></label>
+        </td>
+        <td>
+          <input name="inValStat" id="inVal" class="inVal" type="number" placeholder="">
+          </td>
+          <td>
+            <p id="outputValLabel" class="lablesOut"></p>
+          </td>
+          <td colspan="4">
+            <p id="outputArray" class="outputs">-</p>
+      </td>
+       <tr>
+            <td>
+          <button id="statPushBtn" class="pushBtn" onclick="calculate()"></button>
+          </td>
+          <td>
+            <p id="harmonicLabel" class="lablesOut"></p>
+          </td>
+          <td>
+            <p id="geometricLabel" class="lablesOut"></p>
+          </td>
+          <td>
+            <p id="labelsOutStat" class="lablesOut"></p>
+          </td>
+          <td>
+            <p id="quadraticLabel" class="lablesOut"></p>
+          </td>
+          <td>
+            <p id="swingLabel" class="lablesOut"></p>
+          </td>
+          <td>
+             <p id="5typeOutLabel" class="lablesOut" ></p>
+          </td>
+      </tr>
+        <tr>
+          <td>
+            <p id="Values" class="lablesOut" ></p>
+          </td>
+          <td>
+            <p id="harmonicMean" class="outputs" >-</p>
+          </td>
+          <td>
+            <p id="geometricMean" class="outputs" >-</p>
+          </td>
+          <td>
+            <p id="mean" class="outputs" >-</p>
+          </td>
+          <td>
+             <p id="quadraticMean" class="outputs" >-</p>
+          </td>
+          <td>
+            <p id="swing" class="outputs" >-</p>
+          </td>
+          <td>
+            <p id="data5" class="outputs">-</p>
+          </td>
+        </tr>
+        </table>
+      </div>
   </main>
   <script src="Static/Js/langStat.js"></script>
   <script src="Static/Js/stat.js"></script>
